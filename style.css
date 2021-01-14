@@ -1,0 +1,59 @@
+:root {
+    --cor-violet: hsl(263, 55%, 52%);
+    --cor-gray: hsl(217, 19%, 35%);
+    /* color: blue: hsl(219, 29%, 14%); */
+    --cor-white: hsl(0, 0%, 100%);
+    /* --cor-white: hsl(0, 39%, 62%); */
+
+    /*     
+color: hsl(0, 0%, 81%);
+color: hsl(210, 46%, 95%);  use no bloco 3 e 4 como sombra*/
+}
+
+body {
+    background: gray;
+    color: var(--cor-white)
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "post-1 post-1 post-2 post-5"
+        "post-3 post-4 post-4 post-5"
+    ;
+}
+
+.post {
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.comentario-1 {
+    grid-area: post-1;
+    background: var(--cor-violet);
+}
+
+.comentario-2 {
+    grid-area: post-3;
+    background: rgb(161, 66, 66);
+}
+
+.comentario-3 {
+    grid-area: post-2;
+    background: var(--cor-gray);
+
+}
+
+.comentario-4 {
+
+    background: rgba(20, 19, 34, 0.809);
+    grid-area: post-4;
+}
+
+.comentario-5 {
+    /* extensã do lado */
+    grid-area: post-5;
+
+    background: rgb(182, 88, 88);
+}
