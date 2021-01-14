@@ -1,59 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --cor-violet: hsl(263, 55%, 52%);
     --cor-gray: hsl(217, 19%, 35%);
     /* color: blue: hsl(219, 29%, 14%); */
     --cor-white: hsl(0, 0%, 100%);
     /* --cor-white: hsl(0, 39%, 62%); */
-
-    /*     
-color: hsl(0, 0%, 81%);
-color: hsl(210, 46%, 95%);  use no bloco 3 e 4 como sombra*/
+    --cor-quote: hsl(0, 0%, 81%);
+    --cor-border: hsl(210, 46%, 95%);
 }
 
 body {
-    background: gray;
-    color: var(--cor-white)
-}
-
-.container {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-        "post-1 post-1 post-2 post-5"
-        "post-3 post-4 post-4 post-5"
-    ;
-}
-
-.post {
-    border-radius: 15px;
     padding: 20px;
+    /* margin: 10px; */
+    Font-size: 13px;
+    color: var(--cor-white);
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.comentario-1 {
-    grid-area: post-1;
-    background: var(--cor-violet);
+@media(max-width: 1440px) {
+
+    .container {
+        justify-content: center;
+
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+            "post-1 post-1 post-2 post-5"
+            "post-3 post-4 post-4 post-5"
+        ;
+    }
+
+    .post {
+        border-radius: 7px;
+        padding: 30px;
+
+
+    }
+
+    .comentario-1 {
+        max-width: 500px;
+        grid-area: post-1;
+        background: var(--cor-violet) url("images/bg-pattern-quotation.svg") 350px 0/100px 100px no-repeat;
+
+    }
+
+    .comentario-2 {
+        grid-area: post-3;
+        background: rgb(161, 66, 66);
+    }
+
+    .comentario-3 {
+        width: 200px;
+        grid-area: post-2;
+        background: var(--cor-gray);
+
+    }
+
+    .comentario-4 {
+        max-width: 500px;
+        background: rgba(20, 19, 34, 0.809);
+        grid-area: post-4;
+    }
+
+    .comentario-5 {
+        /* extensã do lado */
+        grid-area: post-5;
+    }
+
+    .comentario-5,
+    .comentario-2 {
+        width: 200px;
+        color: black;
+        background: var(--cor-white);
+        box-shadow: 5px 5px 40px var(--cor-quote);
+    }
+
+    .profile {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+
+    img {
+        border-radius: 50%;
+        border: var(--cor-border) solid 2px;
+        margin-right: 20px;
+        width: 40px;
+    }
+
+    .title {
+
+        margin-bottom: 20px;
+    }
+
+    .parag {
+        color: var(--cor-quote);
+    }
+
+    .graduate {
+
+        color: var(--cor-quote)
+    }
+
+    .bg-d,
+    .p-section-2,
+    .p-section-5 {
+        color: hsl(217, 9%, 56%);
+    }
 }
 
-.comentario-2 {
-    grid-area: post-3;
-    background: rgb(161, 66, 66);
-}
+@media(max-width: 375px) {
+    .container {
+        display: inline;
+        padding: 10px;
+        width: 100%;
+    }
 
-.comentario-3 {
-    grid-area: post-2;
-    background: var(--cor-gray);
+    .post {
+        margin-bottom: 15px;
 
-}
-
-.comentario-4 {
-
-    background: rgba(20, 19, 34, 0.809);
-    grid-area: post-4;
-}
-
-.comentario-5 {
-    /* extensã do lado */
-    grid-area: post-5;
-
-    background: rgb(182, 88, 88);
+    }
 }
