@@ -25,8 +25,8 @@ body {
 
     .container {
         justify-content: center;
-
-
+        align-items: center;
+        width: 100%;
         display: grid;
         grid-gap: 20px;
         grid-template-areas:
@@ -37,44 +37,46 @@ body {
 
     .post {
         border-radius: 7px;
-        padding: 30px;
+        padding: 20px;
 
 
     }
 
     .comentario-1 {
-        max-width: 500px;
+        width: 480px;
         grid-area: post-1;
         background: var(--cor-violet) url("images/bg-pattern-quotation.svg") 350px 0/100px 100px no-repeat;
 
     }
 
     .comentario-2 {
+        width: 190px;
         grid-area: post-3;
         background: rgb(161, 66, 66);
     }
 
     .comentario-3 {
-        width: 200px;
+        width: 190px;
         grid-area: post-2;
         background: var(--cor-gray);
 
     }
 
     .comentario-4 {
-        max-width: 500px;
+        width: 480px;
         background: rgba(20, 19, 34, 0.809);
         grid-area: post-4;
     }
 
     .comentario-5 {
         /* extensã do lado */
+        width: 190px;
         grid-area: post-5;
     }
 
     .comentario-5,
     .comentario-2 {
-        width: 200px;
+
         color: black;
         background: var(--cor-white);
         box-shadow: 5px 5px 40px var(--cor-quote);
@@ -88,10 +90,15 @@ body {
 
     img {
         border-radius: 50%;
-        border: var(--cor-border) solid 2px;
+        border: #e5a5ffbb solid 2px;
         margin-right: 20px;
-        width: 40px;
+        width: 30px;
     }
+
+    /* .harmon {
+        width: 35px;
+        height: 35px;
+    } */
 
     .title {
 
@@ -122,7 +129,9 @@ body {
     }
 
     .post {
-        margin-bottom: 15px;
+        padding: 20px;
+        width: 85%;
+        margin: 10px;
 
     }
 }
