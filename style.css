@@ -14,7 +14,7 @@
 body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
-background: linear-gradient(var(--cor-white), var(--cor-border));
+  background: linear-gradient(300deg, var(--cor-white), var(--cor-border));
   color: var(--cor-white);
   height: 100vh;
 
@@ -77,11 +77,21 @@ background: linear-gradient(var(--cor-white), var(--cor-border));
     margin-bottom: 15px;
   }
 
+  .comentario-2 img,
+  .comentario-5 img,
+  .comentario-3 img {
+    border: 2px solid white;
+  }
+
+  .comentario-4 img {
+    border: 2px solid var(--cor-violet);
+  }
+
   img {
     border-radius: 50%;
     border: #e5a5ffbb solid 2px;
     margin-right: 20px;
-    width: 30px;
+    width: 35px;
   }
 
   .parag {
