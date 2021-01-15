@@ -8,13 +8,13 @@
   --cor-gray: hsl(217, 19%, 35%);
   --cor-white: hsl(0, 0%, 100%);
   --cor-quote: hsl(0, 0%, 81%);
-  --cor-border: hsl(210, 46%, 95%);
+  --cor-border: hsl(212, 42%, 91%);
 }
 
 body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
-
+background: linear-gradient(var(--cor-white), var(--cor-border));
   color: var(--cor-white);
   height: 100vh;
 
@@ -39,7 +39,7 @@ body {
   }
 
   .comentario-1 {
-    width: 480px;
+    width: 500px;
     grid-area: post-1;
     background: var(--cor-violet) url("images/bg-pattern-quotation.svg") 350px 0/100px 100px no-repeat;
   }
@@ -49,13 +49,13 @@ body {
   }
 
   .comentario-3 {
-    width: 190px;
+    width: 200px;
     grid-area: post-2;
     background: var(--cor-gray);
   }
 
   .comentario-4 {
-    width: 480px;
+    width: 500px;
     background: #18202d;
     grid-area: post-4;
   }
@@ -66,10 +66,10 @@ body {
 
   .comentario-5,
   .comentario-2 {
-    width: 190px;
+    width: 200px;
     color: black;
     background: var(--cor-white);
-    box-shadow: 5px 5px 20px var(--cor-quote);
+    box-shadow: 10px 10px 40px var(--cor-quote);
   }
 
   .profile {
