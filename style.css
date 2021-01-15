@@ -9,12 +9,13 @@
   --cor-white: hsl(0, 0%, 100%);
   --cor-quote: hsl(0, 0%, 81%);
   --cor-border:hsl(212, 40%, 90%);
+
 }
 
 body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
-  background: linear-gradient(300deg, var(--cor-white), var(--cor-border));
+  background: #EDF2F8;
   color: var(--cor-white);
   height: 100vh;
 
@@ -69,7 +70,7 @@ body {
     width: 200px;
     color: black;
     background: var(--cor-white);
-    box-shadow: 15px 15px 50px var(--cor-quote);
+    box-shadow: 15px 15px 40px var(--cor-quote);
   }
 
   .profile {
